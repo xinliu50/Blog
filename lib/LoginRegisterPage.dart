@@ -51,7 +51,7 @@ class _LoginRegisterState extends State<LoginRegisterPage>{
             print("login userId = " + userId);
           }
           else{
-            String userId = await widget.auth.SignIn(_email, _password);
+            String userId = await widget.auth.SignUp(_email, _password);
             print("register userId = " + userId);
           }
           widget.onSignedIn();
